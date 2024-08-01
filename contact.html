@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Cairo, Manrope, Poppins;
+    }
+
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .menuContainer ul li {
+      float: left;
+    }
+
+    .menuContainer {
+      width: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .menuContainer a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .menuContainer a:hover {
+      color: yellow;
+
+    }
+
+    .menuContainer a.active {
+      background-color: black;
+      color: white;
+    }
+
+    .menuContainer .iconMobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menuContainer ul {
+        display: none;
+      }
+
+      .menuContainer a.iconMobile {
+        float: right;
+        display: block;
+      }
+
+      .menuContainer.mobile {
+        position: relative;
+      }
+
+      .menuContainer.mobile .iconMobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .menuContainer.mobile ul {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .menuContainer.mobile ul li {
+        float: none;
+      }
+    }
+
+    h2 {
+      font-family: "Cairo";
+      sans-serif;
+      color: #1ecfc9;
+    }
+
+    .headertext {
+      text-align: center;
+    }
+
+    .title-image {
+      background-image: url("../assets/contact/contactcabg.jpg");
+      background-color: #CCCCCC;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .title-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFFFFF;
+    }
+
+    .importance {
+      margin: 0px;
+      padding: 20px;
+      color: white;
+      background-color: black;
+
+    }
+
+    .title-text {
+      font-size: 25px;
+
+    }
+
+    .logo {
+      float: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav id="oNAVMenu" class="menuContainer">
+      <a href="javascript:void(0);" class="iconMobile" onclick="toggleMobileMenu()">
+        <i id="oMenuMobileIcon" class="fa fa-bars"></i>
+      </a>
+
+
+      <div class="logo">
+        <a href="index.html"><img src="../assets/calogo.png" style="width:95px;height:95px;"></a>
+      </div>
+
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title-image">
+    <div class="title-text">
+      <h1 style="font-size:55px">Contact</h1>
+      <p> </p>
+    </div>
+  </div>
+
+
+  <div class="importance">
+    <h2> Email</h2>
+    <h3> Main Email: codingacademybjhs@gmail.com </h3>
+    <p>
+    <h3> Teacher Sponsor (Nichole Murray) Email: npmurray@madisoncity.k12.al.us </h3>
+    </p>
+    <h4>&nbsp</h4>
+    <h2> Social Media</h2>
+    <h3> Instagram: @bjhs_coding_academy </h3>
+  </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      var oMenu = document.getElementById("oNAVMenu");
+      var oIcon = document.getElementById("oMenuMobileIcon");
+
+      if (oMenu.className === "menuContainer") {
+        oMenu.className += " mobile";
+        oIcon.className = "fa fa-window-close";
+      }
+      else {
+        oMenu.className = "menuContainer";
+        oIcon.className = "fa fa-bars";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

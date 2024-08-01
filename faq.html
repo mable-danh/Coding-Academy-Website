@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Cairo, Manrope, Poppins;
+    }
+
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .menuContainer ul li {
+      float: left;
+    }
+
+    .menuContainer {
+      width: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .menuContainer a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .menuContainer a:hover {
+      color: yellow;
+
+    }
+
+    .menuContainer a.active {
+      background-color: black;
+      color: white;
+    }
+
+    .menuContainer .iconMobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .menuContainer ul {
+        display: none;
+      }
+
+      .menuContainer a.iconMobile {
+        float: right;
+        display: block;
+      }
+
+      .menuContainer.mobile {
+        position: relative;
+      }
+
+      .menuContainer.mobile .iconMobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .menuContainer.mobile ul {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .menuContainer.mobile ul li {
+        float: none;
+      }
+    }
+
+
+    h2 {
+      font-family: "Cairo";
+      sans-serif;
+      color: #1DA2DC;
+    }
+
+    h3 {
+      font-family: "Manrope";
+      sans-serif
+    }
+
+    .headertext {
+      text-align: center;
+    }
+
+    .title-image {
+      background-image: url("../assets/faq/faqcabg.jpg");
+      background-color: #CCCCCC;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .title-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFFFFF;
+    }
+
+    .importance {
+      margin: 0px;
+      padding: 20px;
+      color: white;
+      background-color: black;
+
+    }
+
+    .title-text {
+      font-size: 25px;
+
+    }
+
+    .logo {
+      float: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav id="oNAVMenu" class="menuContainer">
+      <a href="javascript:void(0);" class="iconMobile" onclick="toggleMobileMenu()">
+        <i id="oMenuMobileIcon" class="fa fa-bars"></i>
+      </a>
+
+
+      <div class="logo">
+        <a href="index.html"><img src="../assets/calogo.png" style="width:95px;height:95px;"></a>
+      </div>
+
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title-image">
+    <div class="title-text">
+      <h1 style="font-size:55px">Frequently Asked Questions</h1>
+      <p> </p>
+    </div>
+  </div>
+
+
+  <div class="importance">
+
+
+    <h2> I have registered my child, but have not received any email back. What should I do?</h2>
+    <p>
+    <h3> Please check your spam folder. Acceptance emails have already been sent out for the year. </h3>
+    </p>
+
+    <h2> Where should I drop off and pick up my child?</h2>
+    <p>
+    <h3> Parents must walk their child to their classrooms, and pick them up at their classrooms as well. Students and
+      parents are expected to enter through the side entrance (left to the office) located near the guard shack. </h3>
+    </p>
+
+    <h2> Where and what room will Coding Academy take place in?</h2>
+    <p>
+    <h3>Coding Academy will teach in various rooms at Bob Jones High School, which are all located upstairs. When you
+      enter the side entrance, all classrooms will be located in that hall. </h3>
+    </p>
+
+    <h2> How long will each meeting last?</h2>
+    <p>
+    <h3>Each meeting will start at 4:00 p.m. and end at 5:00 p.m.. </h3>
+    </p>
+
+    <h2> Should I sign my child up for Level 1 or Level 2? </h2>
+    <p>
+    <h3> Our Level 1 - Block Coding Course will give students an introduction to coding through the use of block coding.
+      This course is recommended to 3rd and 4th graders with no coding experience. Our Level 2 - Python Course is
+      significantly more advanced and requires advanced experience in block coding. This course is only open to students
+      who have completed Level 1 or are 5th graders who have experience in block coding. </h3>
+    </p>
+
+    <h2> Do students need to have any prior knowledge of coding?</h2>
+    <p>
+    <h3> For our Level 1 - Block Coding Course, students do not require any experience/knowledge in coding. Coding
+      Academy will start teaching from the basic building blocks of coding and will further advance after each lesson.
+      However, for our Level 2 - Block Coding Course, we expect them to be knowledgeable in block coding to provide a
+      foundation to teach them another programming language. </h3>
+    </p>
+
+    <h2>Do students need to come prepared with materials?</h2>
+    <p>
+    <h3> Yes! Students are expected to arrive with their school-issued Chromebook (or a personal laptop). There will not
+      be extra Chromebooks or chargers. </h3>
+    </p>
+
+    <h2>What is the participation fee to join Coding Academy?</h2>
+    <p>
+    <h3> The participation fee is $25, which covers the cost of candy, prizes, t-shirts, and any materials for
+      activities. The fee is non-refundable. </h3>
+    </p>
+
+    <h2>What does Coding Academy teach? </h2>
+    <p>
+    <h3> Coding Academy's Level 1 - Block Coding Course is based on the Code.org curriculum. We will mainly focus on
+      teaching the kids how to graphical code. Like an honors class, Level 1 moves by quicker, but slow enough to ensure
+      that all the students comprehend the lessons. Coding Academy's Level 2 - Python Course will teach the kids the
+      general use of coding with Python. This course is more advanced and will move much quicker. </h3>
+    </p>
+
+    <h2>How can I apply for my child to join Coding Academy?</h2>
+    <p>
+    <h3> Go to the registration tab and fill out the form. If there is a space available for your child, you will get an
+      emailed response in a few weeks regarding their acceptance. </h3>
+    </p>
+
+  </div>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      var oMenu = document.getElementById("oNAVMenu");
+      var oIcon = document.getElementById("oMenuMobileIcon");
+
+      if (oMenu.className === "menuContainer") {
+        oMenu.className += " mobile";
+        oIcon.className = "fa fa-window-close";
+      }
+      else {
+        oMenu.className = "menuContainer";
+        oIcon.className = "fa fa-bars";
+      }
+    }
+  </script>
+
+</body>
+
+</html>

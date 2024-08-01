@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Cairo, Manrope, Poppins;
+    }
+
+    .img {
+      width: 100%;
+    }
+
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .menuContainer ul li {
+      float: left;
+    }
+
+    .menuContainer {
+      width: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .menuContainer a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .menuContainer a:hover {
+      color: yellow;
+
+    }
+
+    .menuContainer a.active {
+      background-color: black;
+      color: white;
+    }
+
+    .menuContainer .iconMobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+
+
+      .picuno img {
+        Width: 150px;
+        height: 200px;
+      }
+
+      .picquattor img {
+        Width: 210px;
+        height: 200px;
+      }
+
+      .picdos img {
+        Width: 230px;
+        height: 200px;
+      }
+
+      .pictres img {
+        Width: 150px;
+        height: 200px;
+      }
+
+      .menuContainer ul {
+        display: none;
+      }
+
+      .menuContainer a.iconMobile {
+        float: right;
+        display: block;
+
+      }
+
+      .menuContainer.mobile {
+        position: relative;
+      }
+
+      .menuContainer.mobile .iconMobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .menuContainer.mobile ul {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .menuContainer.mobile ul li {
+        float: none;
+      }
+    }
+
+    h2 {
+
+      color: #1DA2DC;
+    }
+
+    h3 {
+      font-family: Manrope;
+    }
+
+    h4 {
+      font-family: Poppins;
+    }
+
+    .headertext {
+      text-align: center;
+    }
+
+    .title-image {
+      background-image: url("../assets/about us/aboutusbg.jpg");
+      background-color: #CCCCCC;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .title-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFFFFF;
+    }
+
+    .importance {
+      margin: 0px;
+      padding: 50px;
+      color: white;
+      background-color: black;
+
+    }
+
+    .title-text {
+      font-size: 25px;
+
+    }
+
+    .picuno {
+      margin: 0px;
+      padding-bottom: 5px;
+      padding-left: 50px;
+      background-color: black;
+    }
+
+    .Mable {
+      margin: 0px;
+      padding: 50px;
+      background-color: black;
+      color: white;
+    }
+
+    .picquattor {
+      margin: 0px;
+      padding-bottom: 5px;
+      padding-left: 50px;
+      background-color: black;
+    }
+
+    .Zachary {
+      margin: 0px;
+      padding: 50px;
+      background-color: black;
+      color: white;
+    }
+
+
+    .picdos {
+      margin: 0px;
+      padding-bottom: 5px;
+      padding-left: 50px;
+      background-color: black;
+
+    }
+
+    .Jacob {
+      margin: 0px;
+      padding: 50px;
+      background-color: black;
+      color: white;
+    }
+
+
+    .pictres {
+      margin: 0px;
+      padding-bottom: 5px;
+      padding-left: 50px;
+      background-color: black;
+    }
+
+
+    .teacher {
+      margin: 0px;
+      padding: 50px;
+      background-color: black;
+      color: white;
+    }
+
+    .logo {
+      float: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav id="oNAVMenu" class="menuContainer">
+      <a href="javascript:void(0);" class="iconMobile" onclick="toggleMobileMenu()">
+        <i id="oMenuMobileIcon" class="fa fa-bars"></i>
+      </a>
+
+
+      <div class="logo">
+        <a href="index.html"><img src="../assets/calogo.png" style="width:95px;height:95px;"></a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title-image">
+    <div class="title-text">
+      <h1 style="font-size:55px">About Us</h1>
+      <p> </p>
+    </div>
+  </div>
+
+
+  <div class="importance">
+    <h3>Coding Academy was founded by two Bob Jones Patriots named Mable Danh and Jacob Uchitel. We both shared a common
+      interest in the art of coding and wanted to share the curiosity and enjoyment with younger students. </h3>
+  </div>
+  </div>
+
+
+
+  <script>
+    function toggleMobileMenu() {
+      var oMenu = document.getElementById("oNAVMenu");
+      var oIcon = document.getElementById("oMenuMobileIcon");
+
+      if (oMenu.className === "menuContainer") {
+        oMenu.className += " mobile";
+        oIcon.className = "fa fa-window-close";
+      }
+      else {
+        oMenu.className = "menuContainer";
+        oIcon.className = "fa fa-bars";
+      }
+    }
+  </script>
+
+  <div>
+    <div class="picuno">
+      <img src="../assets/about us/mablepfp.jpg" width="340px" height="410px">
+    </div>
+  </div>
+
+  <div class="Mable">
+    <h2>Mable Danh</h2>
+    <p>
+    <h4> Hi there! I'm Mable Danh and I am currently a senior. I am the founder and President of Coding Academy!
+      Experience wise, I have taken courses in Computer Science, and additionally, I coded this website! As well as my
+      love for coding, I also enjoy teaching others! I have volunteered to teach elementary students advanced math for
+      three years, as well as teach younger students chess! As a child taking a computer science course, I remember
+      coming home and proudly showing my parents what I had created in the class. I hope to teach the students coding in
+      an engaging manner that keeps them invested & proud of the work they do. </h4>
+    </p>
+  </div>
+  </div>
+
+
+  <div>
+    <div class="picquattor">
+      <img src="../assets/about us/zachpfp.jpg" width="445px" height="410px">
+    </div>
+  </div>
+
+  <div class="Zachary">
+    <h2> Zachary Calinsky </h2>
+    <p>
+    <h4> Hello! My name is Zachary and I am the new Vice President of Coding Academy. I've learned how to code in
+      multiple languages, but my expertise lies in Python. I am also involved with other school programs such as the Bob
+      Jones Chess Team and the Latin Honor Society. Coding Academy has become a way for me to spread my knowledge of
+      coding to younger students and I look forward to it each year. </h4>
+    </p>
+  </div>
+  </div>
+
+
+  <div>
+    <!--<div class="picdos">
+    <img src="image000000 (2).jpg" width="475px" height="410px">
+      </div>
+</div>
+  <!-->
+    <!--
+    <div class="Jacob">
+      <h2> Jacob Uchitel </h2>
+      <p>
+      <h4>Hi! I'm Jacob Uchitel and I am a junior at Bob Jones High School. I am the co-founder of Coding Academy. My
+        experiences include being a current instructor at Beast Academy and Science Academy. My love for teaching has
+        led me to help form a new academy. I have also taken multiple coding/computer classes throughout middle school.
+        I enjoy teaching kids and learning new things! </h4>
+      </p>
+    </div>
+    -->
+  </div>
+
+  <div>
+    <div class="pictres">
+      <img src="../assets/about us/murraypfp.jpg" width="330px" height="440px">>
+    </div>
+  </div>
+
+  <div class="teacher">
+    <h2> Nichole Murray </h2>
+    <p>
+    <h4> My name is Nichole Murray, a native Alabamian, and I’ve been teaching at the secondary level in Alabama for 20
+      years. I graduated with a B.S. degree in English Language Art/Secondary Education and a Master's Degree in
+      Secondary Education/English Language Arts from the University of North Alabama. One of my biggest educational
+      accomplishments was receiving my National Board Certification in English Language Arts/Adolescence and Young
+      Adulthood, whereby I joined an amazing group of individuals across the country dedicated to the education of our
+      youth.
+
+      At Bob Jones, I teach Pre-AP English 10 and AP Language and Composition classes. To keep the students engaged and
+      growing, I am always looking for ways to motivate them and fuse together technological and traditional methods of
+      teaching. I am looking forward to working the Coding Academy this semester. </h4>
+    </p>
+  </div>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Cairo, Manrope, Poppins;
+    }
+
+    .img {
+      width: 100%;
+
+    }
+
+
+    ul {
+      list-style: none;
+      float: right;
+      margin-right: 20px;
+    }
+
+    .menuContainer ul li {
+      float: left;
+    }
+
+    .menuContainer {
+      width: 100%;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .menuContainer a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .menuContainer a:hover {
+      color: yellow;
+
+    }
+
+    .menuContainer a.active {
+      background-color: black;
+      color: white;
+    }
+
+    .menuContainer .iconMobile {
+      display: none;
+    }
+
+    .uno img {
+      margin: 0px;
+      padding-right: 410px;
+      padding-left: 410px;
+      padding-top: 50px;
+      padding-bottom: 20px;
+      margin-bottom: -10px;
+      background-color: black;
+      width: 700px;
+      height: 950px;
+
+    }
+
+    .dos img {
+      margin: 0px;
+      padding-right: 410px;
+      padding-left: 410px;
+      padding-bottom: 100px;
+      margin-bottom: -10px;
+      background-color: black;
+      width: 700px;
+      height: 950px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .uno img {
+        margin: 0px;
+        padding: 32px;
+        padding-bottom: 50px;
+        background-color: black;
+        margin-bottom: -10px;
+        width: 350px;
+        height: 550px;
+      }
+
+      .dos img {
+        margin: 0px;
+        padding: 32px;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        margin-bottom: -10px;
+        background-color: black;
+        width: 350px;
+        height: 550px;
+      }
+
+      .menuContainer ul {
+        display: none;
+      }
+
+      .menuContainer a.iconMobile {
+        float: right;
+        display: block;
+      }
+
+      .menuContainer.mobile {
+        position: relative;
+      }
+
+      .menuContainer.mobile .iconMobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+
+      .menuContainer.mobile ul {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .menuContainer.mobile ul li {
+        float: none;
+      }
+    }
+
+    h3 {
+      font-family: "Manrope";
+      sans-serif;
+
+    }
+
+    .headertext {
+      text-align: center;
+    }
+
+    .title-image {
+      background-image: url("../assets/schedule/schedulebg.jpg");
+      background-color: #CCCCCC;
+      height: 700px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .title-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #FFFFFF;
+    }
+
+    .importance {
+      margin: 0px;
+      padding: 20px;
+      color: white;
+      background-color: black;
+
+    }
+
+    .title-text {
+      font-size: 25px;
+
+    }
+
+    .logo {
+      float: left;
+      padding-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav id="oNAVMenu" class="menuContainer">
+      <a href="javascript:void(0);" class="iconMobile" onclick="toggleMobileMenu()">
+        <i id="oMenuMobileIcon" class="fa fa-bars"></i>
+      </a>
+
+
+      <div class="logo">
+        <a href="index.html"><img src="../assets/calogo.png" style="width:95px;height:95px;"></a>
+      </div>
+
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html">Registration</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="title-image">
+    <div class="title-text">
+      <h1 style="font-size:55px">Schedule</h1>
+      <p> </p>
+    </div>
+  </div>
+
+
+  <div class="importance">
+    <center>
+      <h3>Coding Academy meets twice a month at Bob Jones High School; typically the first & last Thursday of each month. However, some lessons will either be pushed earlier/later than its intended date. The boxed dates indicate our meeting days. We will only meet once in December and April.  </h3>
+    </center>
+    <p>
+    <h3></h3>
+    </p>
+  </div>
+  </div>
+
+  <div>
+    <div class="uno">
+      <center>
+        <img src="../assets/schedule/2024cal.png">
+      </center>
+    </div>
+  </div>
+
+  <div>
+    <div class="dos">
+      <center>
+        <img src="../assets/schedule/2025cal.png">
+      </center>
+    </div>
+  </div>
+
+
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      var oMenu = document.getElementById("oNAVMenu");
+      var oIcon = document.getElementById("oMenuMobileIcon");
+
+      if (oMenu.className === "menuContainer") {
+        oMenu.className += " mobile";
+        oIcon.className = "fa fa-window-close";
+      }
+      else {
+        oMenu.className = "menuContainer";
+        oIcon.className = "fa fa-bars";
+      }
+    }
+  </script>
+
+</body>
+
+</html>
